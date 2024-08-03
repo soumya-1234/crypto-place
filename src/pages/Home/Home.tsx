@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react'
+import  { useContext, useEffect, useState } from 'react'
 import './Home.css'
 import { CoinContext } from '../../context/CoinContext'
 
