@@ -4,6 +4,7 @@ import React, { useContext } from 'react';
 import './Navbar.css';
 import logo from '../../assets/logo.png';
 import arrow_icon from "../../assets/arrow_icon.png";
+import Image from 'next/image';
 import { CoinContext } from '../../context/CoinContext';
 
 const Navbar = () => {
@@ -38,7 +39,7 @@ const Navbar = () => {
 
   return (
     <div className='navbar'>
-      <img src={logo} alt="logo" className='logo' />
+      <Image src={logo} alt="logo" className='logo' />
       <ul>
         <li>Home</li>
         <li>Features</li>
@@ -51,7 +52,7 @@ const Navbar = () => {
           <option value="eur">EURO</option>
           <option value="inr">INR</option>
         </select>
-        <button>Sign up <img src={arrow_icon} alt="arrow icon" /></button>
+        <button>Sign up <Image src={arrow_icon} alt="arrow icon" /></button>
       </div>
     </div>
   );
