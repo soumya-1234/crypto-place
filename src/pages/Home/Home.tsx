@@ -1,5 +1,6 @@
 import  { useContext, useEffect, useState } from 'react'
-import './Home.css'
+import './Home.module.css'
+import Image from 'next/image';
 import { CoinContext } from '../../context/CoinContext'
 
 interface Coin {
@@ -41,7 +42,7 @@ useEffect(()=>{
             <div className="table-layout" key={index}>
               <p>{item.market_cap_rank}</p>
               <div>
-                <img src={item.image} />
+                <Image src={item.image} alt={item.name}/>
                 <p>{item.name+" - "+item.symbol}</p>
               </div>
               <p>{currency.symbol} {item.current_price.toLocaleString()}</p>
