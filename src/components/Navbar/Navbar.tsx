@@ -1,7 +1,7 @@
 // src/components/Navbar/Navbar.tsx
 
 import React, { useContext } from 'react';
-import './Navbar.css';
+import './Navbar.module.css';
 import logo from '../../assets/logo.png';
 import arrow_icon from "../../assets/arrow_icon.png";
 import Image from 'next/image';

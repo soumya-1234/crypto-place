@@ -1,5 +1,5 @@
 
-import './Coin.css'
+import './Coin.module.css'
 
 const Coin = () => {
   return (
